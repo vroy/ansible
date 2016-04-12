@@ -153,7 +153,6 @@ class PlaybookExecutor:
 
                             # clear the failed hosts dictionaires in the TQM for the next batch
                             self._unreachable_hosts.update(self._tqm._unreachable_hosts)
-                            self._tqm.clear_failed_hosts()
 
                         # if the last result wasn't zero or 3 (some hosts were unreachable),
                         # break out of the serial batch loop
